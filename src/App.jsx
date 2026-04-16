@@ -1,8 +1,12 @@
+import Navbar from "./componets/Navbar";
+
 const App = () => {
     return (
-        <div>
-            <h1 class="text-3xl  underline">Welcome to my dunesh show case!</h1>
-        </div>
+       <main>
+             <Navbar />
+             <h1>Welcome to my Showcase</h1>
+        </main>
     );
-};          
+};
+
 export default App;

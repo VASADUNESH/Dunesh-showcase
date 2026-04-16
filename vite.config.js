@@ -3,10 +3,12 @@ import react from '@vitejs/plugin-react'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
+// Define __dirname for ES Module compatibility
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
+  // Base path for GitHub Pages deployment
   base: '/Dunesh-showcase/',
   resolve: {
     alias: {
